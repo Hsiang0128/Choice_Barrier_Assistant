@@ -23,7 +23,7 @@ class Page4Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_page4)
         title = "Midterm-Project"
-        music = MediaPlayer.create(this, R.raw.music)
+
         val player1Img = intent.getIntExtra("PLAYER1_IMG",0)
         val player1Name = intent.getStringExtra("PLAYER1_NAME")
         val player2Img =intent.getIntExtra("PLAYER2_IMG",0)
@@ -38,6 +38,7 @@ class Page4Activity : AppCompatActivity() {
             startActivity(intent)
         }
         findViewById<Button>(R.id.BUTTON_START).setOnClickListener {
+            music = MediaPlayer.create(this, R.raw.music)
             findViewById<Button>(R.id.BUTTON_START).isEnabled = false
             findViewById<ImageView>(R.id.IMG_ANIMATION).setImageResource(R.drawable.animation)
             findViewById<TextView>(R.id.LABEL_REQUEST).text = "Player Contesting..."

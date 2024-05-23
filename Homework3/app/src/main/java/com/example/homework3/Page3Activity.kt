@@ -120,12 +120,22 @@ class Page3Activity : AppCompatActivity() {
                 setDataSource("${externalCacheDir?.absolutePath}/audiorecord.3gp")
                 prepare()
                 start()
+                setOnCompletionListener {
+                    // 音频播放完成后的操作
+                    onAudioComplete()
+                }
             } catch (e: Exception) {
                 e.printStackTrace()
             }
         }
     }
-
+    private fun onAudioComplete() {
+        findViewById<Button>(R.id.BUTTON_RECORDING).isEnabled = true
+        findViewById<Button>(R.id.BUTTON_STOP_RECORDING).isEnabled = false
+        findViewById<Button>(R.id.BUTTON_PLAYBACK).isEnabled = true
+        findViewById<Button>(R.id.BUTTON_STOP_PLAYBACK).isEnabled = false
+        findViewById<TextView>(R.id.LABEL_REQUEST).text = "Playback Stop"
+    }
     private fun stopAudio() {
         mediaPlayer?.apply {
             stop()
