@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Homework 3</string>
+
+    <integer-array name="image_list">
+        <item>@drawable/hamburger</item>
+        <item>@drawable/pizza</item>
+        <item>@drawable/bread</item>
+        <item>@drawable/burrito</item>
+        <item>@drawable/cake</item>
+        <item>@drawable/candy</item>
+        <item>@drawable/cookie</item>
+        <item>@drawable/donut</item>
+        <item>@drawable/fried_food</item>
+        <item>@drawable/hot_dog</item>
+        <item>@drawable/sushi</item>
+        <item>@drawable/takoyaki</item>
+    </integer-array>
+</resources>

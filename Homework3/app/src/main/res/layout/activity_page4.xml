@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/IMG_PLAYER1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/IMG_PLAYER2"
+        app:layout_constraintStart_toStartOf="@+id/IMG_PLAYER2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/IMG_ANIMATION"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="248dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/IMG_PLAYER2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/LABEL_REQUEST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Player Contest..."
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/BUTTON_BACK"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Back to Main Page"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/BUTTON_START"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:text="Start Contest"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/BAR_PLAYER1"
+        android:layout_width="251dp"
+        android:layout_height="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/IMG_PLAYER1"
+        app:layout_constraintStart_toStartOf="@+id/BAR_PLAYER2"
+        app:layout_constraintTop_toTopOf="@+id/IMG_PLAYER1" />
+
+    <SeekBar
+        android:id="@+id/BAR_PLAYER2"
+        android:layout_width="251dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/IMG_PLAYER2"
+        app:layout_constraintStart_toEndOf="@+id/IMG_PLAYER2"
+        app:layout_constraintTop_toTopOf="@+id/IMG_PLAYER2" />
+
+    <TextView
+        android:id="@+id/LABEL_PLAYER_NAME_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/IMG_PLAYER2"
+        app:layout_constraintStart_toStartOf="@+id/IMG_PLAYER1"
+        app:layout_constraintTop_toBottomOf="@+id/IMG_PLAYER1" />
+
+    <TextView
+        android:id="@+id/LABEL_PLAYER_NAME_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/IMG_PLAYER2"
+        app:layout_constraintTop_toBottomOf="@+id/IMG_PLAYER2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

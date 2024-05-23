@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/LABEL_REQUEST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginTop="40dp"
+        android:text="Please record an audio for\nthe contest:"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/BUTTON_NEXT"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/BUTTON_RECORDING"
+        android:layout_width="160dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="224dp"
+        android:text="Recording"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/BUTTON_STOP_RECORDING"
+        android:enabled="false"
+        android:layout_width="160dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="24dp"
+        android:text="Stop\nRecording"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:layout_constraintStart_toEndOf="@+id/BUTTON_RECORDING"
+        app:layout_constraintTop_toTopOf="@+id/BUTTON_RECORDING"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/BUTTON_PLAYBACK"
+        android:enabled="false"
+        android:layout_width="160dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="44dp"
+
+        android:text="Playback"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@+id/BUTTON_RECORDING"
+        app:layout_constraintTop_toBottomOf="@+id/BUTTON_RECORDING"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/BUTTON_STOP_PLAYBACK"
+        android:layout_width="160dp"
+        android:layout_height="85dp"
+        android:enabled="false"
+        android:text="Stop\nPlayback"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/BUTTON_PLAYBACK"
+        app:layout_constraintEnd_toEndOf="@+id/BUTTON_STOP_RECORDING"
+        tools:ignore="HardcodedText,MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
